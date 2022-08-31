@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Найденные посты</title>
+</head>
+<body>
+{% for i in all_search_posts  %}
+
+        <img src="{{ i['pic'] }}" width="300">
+
+    <p>{{ i["content"] }}</p>
+{% endfor %}
+
+</body>
+</html>
